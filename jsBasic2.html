@@ -8,6 +8,10 @@
 <script>
   function magic_multiply(x, y){
     // --- your code here ---
+    if (x === 0 && y === 0) {
+      return "All inputs 0";
+    }
+
     if(x.constructor == Array){
       var arr =[]
       for(let i=0; i< x.length; i++){
@@ -23,6 +27,18 @@
         arr.push(y[i] * x)
       }
       return arr;
+    }
+
+    if (y.constructor === String) {
+      return "Error: Can not multiply by string";
+    }
+
+    if (x.constructor === String) {
+      let newString = "";
+      for (let i = 0; i<y; i++) {
+        newString += x;
+      }
+      return newString;
     }
     return x * y;
   }
