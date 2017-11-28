@@ -1,0 +1,66 @@
+<html>
+<body>
+<script>
+//1
+console.log(hello);
+var hello = 'world';
+
+//2
+var needle = 'haystack';
+test();
+
+
+function test(){
+	var needle = 'magnet';
+	console.log(needle);
+}
+
+//3
+var brendan = 'super cool';
+function print(){
+	brendan = 'only okay';
+	console.log(brendan);
+}
+console.log(brendan);
+
+//4
+var food = 'chicken';
+console.log(food);
+eat();
+function eat(){
+	food = 'half-chicken';
+	console.log(food);
+	var food = 'gone';
+}
+
+//5
+
+
+//6
+console.log(genre);
+var genre = "disco";
+rewind();
+function rewind() {
+	genre = "rock";
+	console.log(genre);
+	var genre = "r&b";
+	console.log(genre);
+}
+console.log(genre);
+
+//output
+//1: undified
+//2: magnet
+//3: only okay
+//4: chicken
+//4: half-chicken
+//5: errors
+//6: undified
+//6: genre
+//6: r&b
+//6: disco
+
+
+</script>
+</body>
+</html>
