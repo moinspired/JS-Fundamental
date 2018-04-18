@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script>
+// ------------------------- Basic 1 -----------------------------------//
+var x = [];
+console.log(x);
+x.push('coding', 'dojo', 'rocks');
+x.pop('rocks');
+console.log(x);
+
+// ------------------------- Basic 2 -----------------------------------//
+//Constants are block-scoped, much like variables defined using the let statement.
+// The value of a constant cannot change through re-assignment, and it can't be redeclared.
+const number = 42;
+
+
+// ------------------------- Basic 3 -----------------------------------//
+//Print every element to the console.
+var z = [9, 10, 6, 5, -1, 20, 13, 2];
+for(let i=0; i<z.length; i++){
+  console.log(z[i])
+}
+
+// ------------------------- Basic 3 -----------------------------------//
+function cap(word){
+  return word.toUpperCase();
+}
+
+console.log(cap("motuma"));
+</script>
+  </body>
+</html>

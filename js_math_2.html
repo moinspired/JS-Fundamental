@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function zero_negativity(val){
+        if(val > 0){
+          return true;
+        }
+        return false;
+      }
+
+      function is_even(val) {
+        return val % 2 == 0;
+      }
+      function how_many_even(arr){
+        let count = 0;
+        for(let i=0; i< arr.length; i++){
+          if(arr[i] % 2 == 0) count++;
+        }
+        return count;
+      }
+
+      function create_dummy_array(n){
+        let arr = [];
+        for(let i=0; i<n; i++){
+          arr[i] = Math.floor(Math.random()*10);
+        }
+        return arr;
+      }
+
+      function random_choice(arr){
+        return arr[Math.floor(Math.random()*arr.length)];
+      }
+      let test1 = zero_negativity(-2);
+      console.log(test1);
+
+      let test2 = is_even(2);
+      console.log(test2);
+
+      let test3 = how_many_even([1,2,3,4]);
+      console.log(test3);
+
+      let test4 = create_dummy_array(3);
+      console.log(test4);
+
+      let test5 = random_choice([4,2,8,6]);
+      console.log(test5);
+
+    </script>
+  </body>
+</html>
